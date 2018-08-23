@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body, html {
+  margin: 0 auto;
+  font-family: 'PT Sans', sans-serif;
+  height: 100%;
+  color: #003366;
+  line-height: 1.6;
+}
+
+.home {
+  background: linear-gradient( rgba(0,0,0,0.3), rgba(0, 0, 0, 0.23) ),url("images/header.jpg") 50% 0 no-repeat fixed ;
+  height: 100%;
+  margin: 0;
+  padding-top: 10px ;
+  background-size: cover;
+  font-family: 'Raleway'
+}
+.home h1 {
+  text-align: center;
+  font-size: 90px;
+  color: #FFF;
+  padding: 0;
+  margin-bottom: auto;
+}
+.parallax h1 {
+  text-align: center;
+  font-size: 90px;
+  padding: 0;
+  color: #FFF;
+  margin-bottom: auto;
+  font-family: 'Raleway';
+  letter-spacing: 10px;
+  text-transform: uppercase;
+
+}
+h2 {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 40px;
+}
+
+h3 {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 40px;
+}
+.words a {
+  color: #003366;
+  text-decoration: none
+}
+
+.center-con {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.round {
+    position: relative;
+    border: 3px solid #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+a {
+    font-family: 'PT Sans'
+}
+.round span {
+    z-index: 999;
+    height: 2px;
+    margin: 0.5px;
+    width: 15px;
+    background: #fff;
+    transition: 0.4s ease;
+}
+
+.round span:first-child {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 25%;
+    bottom: 35%;
+}
+
+.round span:nth-child(2) {
+    display: block;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 45%;
+    bottom: 35%;
+}
+
+.round span:nth-child(3) {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 25%;
+    bottom: 54%;
+}
+
+.round span:nth-child(4) {
+    display: block;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 45%;
+    bottom: 54%;
+}
+.round span:hover {
+  color: #000
+}
+.round:hover span:nth-child(1) {
+    transform: rotate(-135deg);
+}
+
+.round:hover span:nth-child(2) {
+    transform: rotate(135deg);
+}
+
+.round:hover span:nth-child(3) {
+    transform: rotate(225deg);
+}
+
+.round:hover span:nth-child(4) {
+    transform: rotate(-225deg);
+}
+nav a {
+    display:inline-block;
+    margin:5px;
+    font: 700 14px 'Raleway';
+    text-transform:uppercase;
+    letter-spacing:1px;
+    padding:10px 12px;
+
+  }
+
+.parallax {
+  background: 50% 0 fixed ;
+  height: 250px;
+
+  background-size: cover;
+  width: 100%;
+  z-index: 9999
+
+}
+
+#breakfast-header {
+  background-image: linear-gradient( rgba(0,0,0,0.05), rgba(0, 0, 0, 0.05) ),url("images/breakfast.jpg");
+}
+#comfortfood-header {
+  background-image: url("images/comfortfood.jpg");
+}
+#japanese-header {
+  background-image: url("images/japanese.jpg");
+}
+#italian-header {
+  background-image: linear-gradient( rgba(0,0,0,0.05), rgba(0, 0, 0, 0.05) ),url("images/italian.jpg");
+}
+#sweets-header {
+  background-image: url("images/sweets.jpg");
+}
+
+nav {
+  width: 100%;
+  text-align: center;
+  position:fixed;
+  top:0;
+  padding:10px;
+  z-index:99;
+  box-sizing:border-box;
+  background-color: #FFF;
+  opacity: 0.9;
+}
+a:hover {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#italian:hover {
+  color: #6DA88B;
+  transition: all 0.3s ease-in-out 0s;
+}
+#breakfast:hover {
+  color: #BD93D9;
+  transition: all 0.3s ease-in-out 0s;
+}
+.breakfast a {
+  color: #BD93D9
+}
+.breakfast > .words > h2 {
+  border-bottom: #BD93D9 1.5px solid;
+}
+.breakfast .name {
+  color: #BD93D9
+}
+.italian a {
+  color: #6DA88B
+}
+.italian > .words > h2 {
+  border-bottom: #6DA88B 1.5px solid;
+}
+.italian .name {
+  color: #6DA88B
+}
+.img {
+  float: left;
+  height: 550px;
+  width: 40%;
+  margin: 0 20px;
+  padding: 60px
+}
+/* #mac-img {
+  float: left;
+  width: 40%;
+  margin: 0 20px;
+  padding: 60px
+} */
+.words {
+  text-align: center;
+  margin-top: 60px;
+  margin-left: 40px;
+  float: left;
+  height: 200px;
+  width: 28%;
+  justify-content: center;
+}
+.words h2 {
+  padding: 10px;
+  border-bottom: 1.5px solid ;
+}
+.name {
+  text-transform: uppercase;
+  font-weight: 1200;
+  color: #A6D1EE
+}
+#japanese:hover {
+  color: #E16383;
+  transition: all 0.3s ease-in-out 0s;
+}
+.asian a {
+  color: #E16383
+}
+.asian > .words > h2 {
+  border-bottom: #F2788E 1.5px solid;
+}
+.asian .name {
+  color: #E16383
+}
+#comfort-food:hover {
+  color: #A6D1EE;
+  transition: all 0.3s ease-in-out 0s;
+}
+.comfort-food a {
+  color: #A6D1EE
+}
+.comfort-food > .words > h2 {
+  border-bottom: #A6D1EE 1.5px solid;
+}
+.comfort-food .name {
+  color: #A6D1EE
+}
+#sweets:hover {
+  color: #F58BCA;
+  transition: all 0.3s ease-in-out 0s;
+}
+.sweets a {
+  color: #F58BCA
+}
+.sweets > .words > h2 {
+  border-bottom: #F58BCA 1.5px solid;
+}
+.sweets .name {
+  color: #F58BCA
+}
+/* #good-img {
+  float: left;
+  width: 40%;
+  margin: 0 20px;
+  padding: 60px
+} */
+.img {
+  float: left;
+  width: 40%;
+  margin: 0 20px 0 60px;
+  padding: 60px
+}
+#rest-title {
+  color: #000
+}
