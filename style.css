@@ -129,11 +129,13 @@ a {
 }
 nav a {
     display:inline-block;
-    margin:5px;
+    margin: 5px;
+    color: #003366;
     font: 700 14px 'Raleway';
     text-transform:uppercase;
-    letter-spacing:1px;
-    padding:10px 12px;
+    letter-spacing: 1px;
+    padding: 10px 12px;
+    text-decoration: none;
 
   }
 
@@ -173,15 +175,18 @@ nav {
   box-sizing:border-box;
   background-color: #FFF;
   opacity: 0.9;
+  text-decoration: none;
+
 }
 a:hover {
   cursor: pointer;
-  transition: all 0.3s ease-in-out 0s;
 }
+
 
 #italian:hover {
   color: #6DA88B;
   transition: all 0.3s ease-in-out 0s;
+
 }
 #breakfast:hover {
   color: #BD93D9;
